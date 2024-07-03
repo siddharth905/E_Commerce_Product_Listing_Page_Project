@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <script src="https://kit.fontawesome.com/e8729b2139.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <nav style="padding-bottom: 115px;">
+    <div class="text-center pt-4 px-3" style="width: 100vw;background-color: white;position: fixed;z-index: 2;">
+      <div class="d-flex flex-column" >
+        <div class="row">
+          <div class="col-sm"></div>
+          <div class="col-sm">
+            <img src="../images/logo.svg" alt="" height="40px">
+          </div>
+          <div class="col-sm text-end">
+            <a href="../login/signup.html"><img src="../images/location.svg" alt="" class="mx-3"></a>
+            <a href="../login/about.html"><img src="../images/search.svg" alt="" class="mx-3"></a>
+          <a href="../login/login.html"><img src="../images/user.svg" alt="" class="mx-3"></a>  
+            <img src="../images/cart.svg" alt="" class="mx-3">
+            <a href="logout.html"><i class="fa-solid fa-right-from-bracket mx-3"></i></a>
+          </div>
+        </div>
+        <div class="row justify-content-md-center py-3 fw-bold " style="font-size: 0.8rem;">
+          <div class="col col-md-auto mx-3">
+            SS 24
+          </div>
+          <div class="col col-md-auto mx-3">
+            <div class="dropdown">
+
+              <a class="dropdown-toggle text-black" data-toggle="dropdown" href="#">MEN <span class="caret"></span></a>
+
+              <ul class="dropdown-menu">
+
+                <li><a href="#">Shirts</a></li>
+
+                <li><a href="#">Polo</a></li>
+
+                <li><a href="#">Trackpants</a></li>
+
+                <li><a href="#">Non Denim Trousers</a></li>
+
+                <li><a href="#">Jackets</a></li>
+
+              </ul>
+
+            </div>
+          </div>
+          <div class="col col-md-auto mx-3">
+            <div class="dropdown">
+
+              <a class="dropdown-toggle text-black" data-toggle="dropdown" href="#">WOMEN <span
+                  class="caret"></span></a>
+
+              <ul class="dropdown-menu">
+
+                <li><a href="#">Sweaters</a></li>
+
+                <li><a href="#">Sweatshirts</a></li>
+
+                <li><a href="#">Jeans</a></li>
+
+                <li><a href="#">Tshirts</a></li>
+
+                <li><a href="#">Shorts</a></li>
+
+              </ul>
+
+            </div>
+          </div>
+          <div class="col col-md-auto mx-3">
+            <div class="dropdown">
+
+              <a class="dropdown-toggle text-black" data-toggle="dropdown" href="#">COLLECTIONS <span
+                  class="caret"></span></a>
+
+              <ul class="dropdown-menu">
+
+                <li><a href="#">CASEY JONES</a></li>
+
+                <li><a href="#">MONOCROOME</a></li>
+
+                <li><a href="#">HERITAGE</a></li>
+
+                <li><a href="#">WRANGLER X ABDON</a></li>
+
+              </ul>
+
+            </div>
+          </div>
+          <div class="col col-md-auto mx-3">
+            SALE
+          </div>
+          <div class="col col-md-auto mx-3">
+            FIT GUIDE
+          </div>
+          <div class="col col-md-auto mx-3">
+            BLOGS
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="bg-dark text-white d-flex justify-content-md-center py-3 fw-bold" style="font-size: 0.8rem;">
+    FREE SHIPPING & 30 DAY RETURNS | SIGN UP AND GET 15% OFF* USE CODE : NEW15 | CUSTOMER CARE # 9740524834
+  </div>
+  <div>
+    <img class="d-block mx-auto" style="width: 100%;height: 20rem;object-fit: cover;object-position: 0% 0%;" 
+      src="https://eu.dockers.com/cdn/shop/files/DOGO_Launch_Generic_1920x800_1_1944x.jpg?v=1716456874" alt="">
+  </div>
+  <main class="d-flex px-5 mt-5">
+    <aside style="width: 15%;">
+      <div class="border border-start-0">
+        <div class="d-flex align-items-center p-2">
+          <img src="/images/filter.svg" alt="">
+          <p class="mb-0 mx-2">Filters</p>
+        </div>
+        <div class="border border-start-0 overflow-auto p-3" style="width: 103%; height: 500px;">
+          <div class="discount" id="discount">
+            <h6>Discount</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                10% and more
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+              <label class="form-check-label" for="flexRadioDefault2">
+                20% and more
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+              <label class="form-check-label" for="flexRadioDefault3">
+                30% and more
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+              <label class="form-check-label" for="flexRadioDefault4">
+                40% and more
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+              <label class="form-check-label" for="flexRadioDefault5">
+                50% and more
+              </label>
+            </div>
+            <hr>
+          </div>
+          <div class="gender" id="gender">
+            <h6>Gender</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="gender1">
+              <label class="form-check-label" for="gender1">
+                Men
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="gender2">
+              <label class="form-check-label" for="gender2">
+                Unisex
+              </label>
+            </div>
+          </div>
+          <hr>
+          <div class="category" id="category">
+            <h6>Category</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="category1">
+              <label class="form-check-label" for="category1">
+                Jackets
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="category2">
+              <label class="form-check-label" for="category2">
+                Jeans
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="category3">
+              <label class="form-check-label" for="category3">
+                Joggers
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="category4">
+              <label class="form-check-label" for="category4">
+                Shirts
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="category5">
+              <label class="form-check-label" for="category5">
+                Shorts
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="category6">
+              <label class="form-check-label" for="category6">
+                Sweatshirts
+              </label>
+            </div>
+          </div>
+          <hr>
+          <div class="size" id="size">
+            <h6>Size</h6>
+            <div class="d-flex flex-wrap gap-2">
+              <p class="border p-2 rounded size-boxes">XS</p>
+              <p class="border p-2 rounded size-boxes">S</p>
+              <p class="border p-2 rounded size-boxes">M</p>
+              <p class="border p-2 rounded size-boxes">L</p>
+              <p class="border p-2 rounded size-boxes">XL</p>
+              <p class="border p-2 rounded size-boxes">XXL</p>
+              <p class="border p-2 rounded size-boxes">28</p>
+              <p class="border p-2 rounded size-boxes">30</p>
+              <p class="border p-2 rounded size-boxes">32</p>
+              <p class="border p-2 rounded size-boxes">34</p>
+              <p class="border p-2 rounded size-boxes">36</p>
+              <p class="border p-2 rounded size-boxes">38</p>
+              <p class="border p-2 rounded size-boxes">40</p>
+            </div>
+          </div>
+          <hr>
+          <div class="price" id="price">
+            <h6>Price</h6>
+            <div class="mx-3">
+              <input type="range" class="form-range" min="0" max="9" id="customRange2">
+            </div>
+            <div class="d-flex ts-7 ms-2  justify-content-between">
+              <p>0</p>
+              <p>20,000+</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <article class="mx-5" style="width: 80%;">
+      <div class="mainheading d-flex justify-content-between mb-4">
+        <div class="d-flex align-items-baseline">
+          <h1>JEANS, T-SHIRTS AND SHIRTS FOR MEN</h1>
+          <p class="mx-3">1947 Items</p>
+        </div>
+        <div>
+          <div class="dropdown">
+            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Sort By
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Trending</a></li>
+              <li><a class="dropdown-item" href="#">Latest</a></li>
+              <li><a class="dropdown-item" href="#">Price Low-to-High</a></li>
+              <li><a class="dropdown-item" href="#">Price High-to-Low</a></li>
+              <li><a class="dropdown-item" href="#">Max Discount</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="listed-products">
+        <div class="row row-cols-4">
+          <div class="col ts-8 product-hover">
+            <img width="100%"
+              src="https://static.aceomni.cmsaceturtle.com/prod/product-image/aceomni/Wrangler/Monobrand/WMTS006118/WMTS006118_1.jpg"
+              alt="">
+            <p class="mt-2">Men Solid Pink Crew Neck Regular Fit Tshirt</p>
+            <div class="d-flex">
+              <p class="fw-bold me-3">Rs.999</p>
+              <p class="fw-light text-decoration-line-through me-3">Rs.1500</p>
+              <p style="color: green;">45% OFF</p>
+            </div>
+          </div>
+          <div class="col ts-8 product-hover">
+            <img width="100%"
+              src="https://static.aceomni.cmsaceturtle.com/prod/product-image/aceomni/Wrangler/Monobrand/WMTS006117/WMTS006117_1.jpg"
+              alt="">
+            <p class="mt-2">Men Solid Pink Crew Neck Regular Fit Tshirt</p>
+            <div class="d-flex">
+              <p class="fw-bold me-3">Rs.999</p>
+              <p class="fw-light text-decoration-line-through me-3">Rs.1500</p>
+              <p style="color: green;">45% OFF</p>
+            </div>
+          </div>
+          <div class="col ts-8 product-hover">
+            <img width="100%"
+              src="https://static.aceomni.cmsaceturtle.com/prod/product-image/aceomni/Wrangler/Monobrand/WMTS006116/WMTS006116_1.jpg"
+              alt="">
+            <p class="mt-2">Men Solid Pink Crew Neck Regular Fit Tshirt</p>
+            <div class="d-flex">
+              <p class="fw-bold me-3">Rs.999</p>
+              <p class="fw-light text-decoration-line-through me-3">Rs.1500</p>
+              <p style="color: green;">45% OFF</p>
+            </div>
+          </div>
+          <div class="col ts-8 product-hover">
+            <img width="100%"
+              src="https://static.aceomni.cmsaceturtle.com/prod/product-image/aceomni/Wrangler/Monobrand/WMTS005606/WMTS005606_1.jpg"
+              alt="">
+            <p class="mt-2">Men Solid Pink Crew Neck Regular Fit Tshirt</p>
+            <div class="d-flex">
+              <p class="fw-bold me-3">Rs.999</p>
+              <p class="fw-light text-decoration-line-through me-3">Rs.1500</p>
+              <p style="color: green;">45% OFF</p>
+            </div>
+          </div>
+          <div class="col ts-8 product-hover">
+            <img width="100%"
+              src="https://static.aceomni.cmsaceturtle.com/prod/product-image/aceomni/Wrangler/Monobrand/WMTS005663/WMTS005663_1.jpg"
+              alt="">
+            <p class="mt-2">Men Solid Pink Crew Neck Regular Fit Tshirt</p>
+            <div class="d-flex">
+              <p class="fw-bold me-3">Rs.999</p>
+              <p class="fw-light text-decoration-line-through me-3">Rs.1500</p>
+              <p style="color: green;">45% OFF</p>
+            </div>
+          </div>
+          <div class="col ts-8 product-hover">
+            <img width="100%"
+              src="https://static.aceomni.cmsaceturtle.com/prod/product-image/aceomni/Wrangler/Monobrand/WMTS006143/WMTS006143_1.jpg"
+              alt="">
+            <p class="mt-2">Men Solid Pink Crew Neck Regular Fit Tshirt</p>
+            <div class="d-flex">
+              <p class="fw-bold me-3">Rs.999</p>
+              <p class="fw-light text-decoration-line-through me-3">Rs.1500</p>
+              <p style="color: green;">45% OFF</p>
+            </div>
+          </div>
+          <div class="col ts-8 product-hover">
+            <img width="100%"
+              src="https://static.aceomni.cmsaceturtle.com/prod/product-image/aceomni/Wrangler/Monobrand/WMTS005603/WMTS005603_1.jpg"
+              alt="">
+            <p class="mt-2">Men Solid Pink Crew Neck Regular Fit Tshirt</p>
+            <div class="d-flex">
+              <p class="fw-bold me-3">Rs.999</p>
+              <p class="fw-light text-decoration-line-through me-3">Rs.1500</p>
+              <p style="color: green;">45% OFF</p>
+            </div>
+          </div>
+          <div class="col ts-8 product-hover">
+            <img width="100%"
+              src="https://static.aceomni.cmsaceturtle.com/prod/product-image/aceomni/Wrangler/Monobrand/WMTS005605/WMTS005605_1.jpg"
+              alt="">
+            <p class="mt-2">Men Solid Pink Crew Neck Regular Fit Tshirt</p>
+            <div class="d-flex">
+              <p class="fw-bold me-3">Rs.999</p>
+              <p class="fw-light text-decoration-line-through me-3">Rs.1500</p>
+              <p style="color: green;">45% OFF</p>
+            </div>
+          </div>
+          <div class="col ts-8 product-hover">
+            <img width="100%"
+              src="https://static.aceomni.cmsaceturtle.com/prod/product-image/aceomni/Wrangler/Monobrand/WMTS005132/WMTS005132_1.jpg"
+              alt="">
+            <p class="mt-2">Men Solid Pink Crew Neck Regular Fit Tshirt</p>
+            <div class="d-flex">
+              <p class="fw-bold me-3">Rs.999</p>
+              <p class="fw-light text-decoration-line-through me-3">Rs.1500</p>
+              <p style="color: green;">45% OFF</p>
+            </div>
+          </div>
+          <div class="col ts-8 product-hover">
+            <img width="100%"
+              src="https://static.aceomni.cmsaceturtle.com/prod/product-image/aceomni/Wrangler/Monobrand/WMTS006130/WMTS006130_1.jpg"
+              alt="">
+            <p class="mt-2">Men Solid Pink Crew Neck Regular Fit Tshirt</p>
+            <div class="d-flex">
+              <p class="fw-bold me-3">Rs.999</p>
+              <p class="fw-light text-decoration-line-through me-3">Rs.1500</p>
+              <p style="color: green;">45% OFF</p>
+            </div>
+          </div>
+          <div class="col ts-8 product-hover">
+            <img width="100%"
+              src="https://static.aceomni.cmsaceturtle.com/prod/product-image/aceomni/Wrangler/Monobrand/WMTS006144/WMTS006144_1.jpg"
+              alt="">
+            <p class="mt-2">Men Solid Pink Crew Neck Regular Fit Tshirt</p>
+            <div class="d-flex">
+              <p class="fw-bold me-3">Rs.999</p>
+              <p class="fw-light text-decoration-line-through me-3">Rs.1500</p>
+              <p style="color: green;">45% OFF</p>
+            </div>
+          </div>
+          <div class="col ts-8 product-hover">
+            <img width="100%"
+              src="https://static.aceomni.cmsaceturtle.com/prod/product-image/aceomni/Wrangler/Monobrand/WMTS006115/WMTS006115_1.jpg"
+              alt="">
+            <p class="mt-2">Men Solid Pink Crew Neck Regular Fit Tshirt</p>
+            <div class="d-flex">
+              <p class="fw-bold me-3">Rs.999</p>
+              <p class="fw-light text-decoration-line-through me-3">Rs.1500</p>
+              <p style="color: green;">45% OFF</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center p-3">
+          <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link  text-black" href="#">1</a></li>
+          <li class="page-item"><a class="page-link text-black" href="#">2</a></li>
+          <li class="page-item"><a class="page-link text-black" href="#">3</a></li>
+          <li class="page-item"><a class="page-link text-black" href="#">4</a></li>
+          <li class="page-item "><a class="page-link text-black" href="#">5</a></li>
+          <li class="page-item">
+            <a class="page-link text-black" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+    </article>
+
+  </main>
+  <footer class="mx-5">
+    <div style="display: flex; justify-content: space-between; margin: 50px 70px;">
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <h4>ABOUT US</h4>
+        <div>
+          <div>
+            <a href="../login/about.html"><p>About Us</p></a>
+          </div>
+          <div>
+            <p>Store Locator</p>
+          </div>
+          <div>
+            <p>FAQs</p>
+          </div>
+          <div>
+            <p>Become a Franchise</p>
+          </div>
+          <div>
+            <p>Collections</p>
+          </div>
+          <div>
+            <p>Bulk Enquiry</p>
+          </div>
+        </div>
+
+      </div>
+      <div>
+        <h4>CUSTOMER SERVICE</h4>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <div>
+            <p>Contact Us</p>
+          </div>
+          <div>
+            <p>Privacy Policy</p>
+          </div>
+          <div>
+            <p>Return Policy</p>
+          </div>
+          <div>
+            <p>Shipping Policy</p>
+          </div>
+          <div>
+            <p>Warranty Policy</p>
+          </div>
+          <div>
+            <p>Terms & Conditions</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4>MY ACCOUNT</h4>
+        <div>
+          <p>Student Offer</p>
+        </div>
+      </div>
+      <div>
+        <h4>FOLLOW US</h4>
+        <div style="display: flex; justify-content: space-evenly; gap: 10px;">
+          <div style="width: 35px; height: 35px;">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z" />
+            </svg>
+          </div>
+          <div style="width: 35px; height: 35px;">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z" />
+            </svg>
+          </div>
+
+          <div style="width: 35px; height: 35px;">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M282 256.2l-95.2-54.1V310.3L282 256.2zM384 32H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zm14.4 136.1c7.6 28.6 7.6 88.2 7.6 88.2s0 59.6-7.6 88.1c-4.2 15.8-16.5 27.7-32.2 31.9C337.9 384 224 384 224 384s-113.9 0-142.2-7.6c-15.7-4.2-28-16.1-32.2-31.9C42 315.9 42 256.3 42 256.3s0-59.7 7.6-88.2c4.2-15.8 16.5-28.2 32.2-32.4C110.1 128 224 128 224 128s113.9 0 142.2 7.7c15.7 4.2 28 16.6 32.2 32.4z" />
+            </svg>
+          </div>
+          <div style="width: 35px; height: 35px;">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr style="width: 100%;height: 10px; color: black;">
+    </hr>
+
+    <div style="display: flex;justify-content: center;padding-bottom: 10px;">
+      <div style="display: flex; width: 50%; justify-content: space-evenly;">
+        <div style="width: 35px; height: 35px;">
+          <svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              d="M470.1 231.3s7.6 37.2 9.3 45H446c3.3-8.9 16-43.5 16-43.5-.2 .3 3.3-9.1 5.3-14.9l2.8 13.4zM576 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h480c26.5 0 48 21.5 48 48zM152.5 331.2L215.7 176h-42.5l-39.3 106-4.3-21.5-14-71.4c-2.3-9.9-9.4-12.7-18.2-13.1H32.7l-.7 3.1c15.8 4 29.9 9.8 42.2 17.1l35.8 135h42.5zm94.4 .2L272.1 176h-40.2l-25.1 155.4h40.1zm139.9-50.8c.2-17.7-10.6-31.2-33.7-42.3-14.1-7.1-22.7-11.9-22.7-19.2 .2-6.6 7.3-13.4 23.1-13.4 13.1-.3 22.7 2.8 29.9 5.9l3.6 1.7 5.5-33.6c-7.9-3.1-20.5-6.6-36-6.6-39.7 0-67.6 21.2-67.8 51.4-.3 22.3 20 34.7 35.2 42.2 15.5 7.6 20.8 12.6 20.8 19.3-.2 10.4-12.6 15.2-24.1 15.2-16 0-24.6-2.5-37.7-8.3l-5.3-2.5-5.6 34.9c9.4 4.3 26.8 8.1 44.8 8.3 42.2 .1 69.7-20.8 70-53zM528 331.4L495.6 176h-31.1c-9.6 0-16.9 2.8-21 12.9l-59.7 142.5H426s6.9-19.2 8.4-23.3H486c1.2 5.5 4.8 23.3 4.8 23.3H528z" />
+          </svg>
+
+        </div>
+        <div style="width: 35px; height: 35px;">
+          <svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              d="M482.9 410.3c0 6.8-4.6 11.7-11.2 11.7-6.8 0-11.2-5.2-11.2-11.7 0-6.5 4.4-11.7 11.2-11.7 6.6 0 11.2 5.2 11.2 11.7zm-310.8-11.7c-7.1 0-11.2 5.2-11.2 11.7 0 6.5 4.1 11.7 11.2 11.7 6.5 0 10.9-4.9 10.9-11.7-.1-6.5-4.4-11.7-10.9-11.7zm117.5-.3c-5.4 0-8.7 3.5-9.5 8.7h19.1c-.9-5.7-4.4-8.7-9.6-8.7zm107.8 .3c-6.8 0-10.9 5.2-10.9 11.7 0 6.5 4.1 11.7 10.9 11.7 6.8 0 11.2-4.9 11.2-11.7 0-6.5-4.4-11.7-11.2-11.7zm105.9 26.1c0 .3 .3 .5 .3 1.1 0 .3-.3 .5-.3 1.1-.3 .3-.3 .5-.5 .8-.3 .3-.5 .5-1.1 .5-.3 .3-.5 .3-1.1 .3-.3 0-.5 0-1.1-.3-.3 0-.5-.3-.8-.5-.3-.3-.5-.5-.5-.8-.3-.5-.3-.8-.3-1.1 0-.5 0-.8 .3-1.1 0-.5 .3-.8 .5-1.1 .3-.3 .5-.3 .8-.5 .5-.3 .8-.3 1.1-.3 .5 0 .8 0 1.1 .3 .5 .3 .8 .3 1.1 .5s.2 .6 .5 1.1zm-2.2 1.4c.5 0 .5-.3 .8-.3 .3-.3 .3-.5 .3-.8 0-.3 0-.5-.3-.8-.3 0-.5-.3-1.1-.3h-1.6v3.5h.8V426h.3l1.1 1.4h.8l-1.1-1.3zM576 81v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V81c0-26.5 21.5-48 48-48h480c26.5 0 48 21.5 48 48zM64 220.6c0 76.5 62.1 138.5 138.5 138.5 27.2 0 53.9-8.2 76.5-23.1-72.9-59.3-72.4-171.2 0-230.5-22.6-15-49.3-23.1-76.5-23.1-76.4-.1-138.5 62-138.5 138.2zm224 108.8c70.5-55 70.2-162.2 0-217.5-70.2 55.3-70.5 162.6 0 217.5zm-142.3 76.3c0-8.7-5.7-14.4-14.7-14.7-4.6 0-9.5 1.4-12.8 6.5-2.4-4.1-6.5-6.5-12.2-6.5-3.8 0-7.6 1.4-10.6 5.4V392h-8.2v36.7h8.2c0-18.9-2.5-30.2 9-30.2 10.2 0 8.2 10.2 8.2 30.2h7.9c0-18.3-2.5-30.2 9-30.2 10.2 0 8.2 10 8.2 30.2h8.2v-23zm44.9-13.7h-7.9v4.4c-2.7-3.3-6.5-5.4-11.7-5.4-10.3 0-18.2 8.2-18.2 19.3 0 11.2 7.9 19.3 18.2 19.3 5.2 0 9-1.9 11.7-5.4v4.6h7.9V392zm40.5 25.6c0-15-22.9-8.2-22.9-15.2 0-5.7 11.9-4.8 18.5-1.1l3.3-6.5c-9.4-6.1-30.2-6-30.2 8.2 0 14.3 22.9 8.3 22.9 15 0 6.3-13.5 5.8-20.7 .8l-3.5 6.3c11.2 7.6 32.6 6 32.6-7.5zm35.4 9.3l-2.2-6.8c-3.8 2.1-12.2 4.4-12.2-4.1v-16.6h13.1V392h-13.1v-11.2h-8.2V392h-7.6v7.3h7.6V416c0 17.6 17.3 14.4 22.6 10.9zm13.3-13.4h27.5c0-16.2-7.4-22.6-17.4-22.6-10.6 0-18.2 7.9-18.2 19.3 0 20.5 22.6 23.9 33.8 14.2l-3.8-6c-7.8 6.4-19.6 5.8-21.9-4.9zm59.1-21.5c-4.6-2-11.6-1.8-15.2 4.4V392h-8.2v36.7h8.2V408c0-11.6 9.5-10.1 12.8-8.4l2.4-7.6zm10.6 18.3c0-11.4 11.6-15.1 20.7-8.4l3.8-6.5c-11.6-9.1-32.7-4.1-32.7 15 0 19.8 22.4 23.8 32.7 15l-3.8-6.5c-9.2 6.5-20.7 2.6-20.7-8.6zm66.7-18.3H408v4.4c-8.3-11-29.9-4.8-29.9 13.9 0 19.2 22.4 24.7 29.9 13.9v4.6h8.2V392zm33.7 0c-2.4-1.2-11-2.9-15.2 4.4V392h-7.9v36.7h7.9V408c0-11 9-10.3 12.8-8.4l2.4-7.6zm40.3-14.9h-7.9v19.3c-8.2-10.9-29.9-5.1-29.9 13.9 0 19.4 22.5 24.6 29.9 13.9v4.6h7.9v-51.7zm7.6-75.1v4.6h.8V302h1.9v-.8h-4.6v.8h1.9zm6.6 123.8c0-.5 0-1.1-.3-1.6-.3-.3-.5-.8-.8-1.1-.3-.3-.8-.5-1.1-.8-.5 0-1.1-.3-1.6-.3-.3 0-.8 .3-1.4 .3-.5 .3-.8 .5-1.1 .8-.5 .3-.8 .8-.8 1.1-.3 .5-.3 1.1-.3 1.6 0 .3 0 .8 .3 1.4 0 .3 .3 .8 .8 1.1 .3 .3 .5 .5 1.1 .8 .5 .3 1.1 .3 1.4 .3 .5 0 1.1 0 1.6-.3 .3-.3 .8-.5 1.1-.8 .3-.3 .5-.8 .8-1.1 .3-.6 .3-1.1 .3-1.4zm3.2-124.7h-1.4l-1.6 3.5-1.6-3.5h-1.4v5.4h.8v-4.1l1.6 3.5h1.1l1.4-3.5v4.1h1.1v-5.4zm4.4-80.5c0-76.2-62.1-138.3-138.5-138.3-27.2 0-53.9 8.2-76.5 23.1 72.1 59.3 73.2 171.5 0 230.5 22.6 15 49.5 23.1 76.5 23.1 76.4 .1 138.5-61.9 138.5-138.4z" />
+          </svg>
+        </div>
+        <div style="width: 35px; height: 35px;">
+          <svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              d="M124.7 201.8c.1-11.8 0-23.5 0-35.3v-35.3c0-1.3 .4-2 1.4-2.7 11.5-8 24.1-12.1 38.2-11.1 12.5 .9 22.7 7 28.1 21.7 3.3 8.9 4.1 18.2 4.1 27.7 0 8.7-.7 17.3-3.4 25.6-5.7 17.8-18.7 24.7-35.7 23.9-11.7-.5-21.9-5-31.4-11.7-.9-.8-1.4-1.6-1.3-2.8zm154.9 14.6c4.6 1.8 9.3 2 14.1 1.5 11.6-1.2 21.9-5.7 31.3-12.5 .9-.6 1.3-1.3 1.3-2.5-.1-3.9 0-7.9 0-11.8 0-4-.1-8 0-12 0-1.4-.4-2-1.8-2.2-7-.9-13.9-2.2-20.9-2.9-7-.6-14-.3-20.8 1.9-6.7 2.2-11.7 6.2-13.7 13.1-1.6 5.4-1.6 10.8 .1 16.2 1.6 5.5 5.2 9.2 10.4 11.2zM576 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h480c26.5 0 48 21.5 48 48zm-207.5 23.9c.4 1.7 .9 3.4 1.6 5.1 16.5 40.6 32.9 81.3 49.5 121.9 1.4 3.5 1.7 6.4 .2 9.9-2.8 6.2-4.9 12.6-7.8 18.7-2.6 5.5-6.7 9.5-12.7 11.2-4.2 1.1-8.5 1.3-12.9 .9-2.1-.2-4.2-.7-6.3-.8-2.8-.2-4.2 1.1-4.3 4-.1 2.8-.1 5.6 0 8.3 .1 4.6 1.6 6.7 6.2 7.5 4.7 .8 9.4 1.6 14.2 1.7 14.3 .3 25.7-5.4 33.1-17.9 2.9-4.9 5.6-10.1 7.7-15.4 19.8-50.1 39.5-100.3 59.2-150.5 .6-1.5 1.1-3 1.3-4.6 .4-2.4-.7-3.6-3.1-3.7-5.6-.1-11.1 0-16.7 0-3.1 0-5.3 1.4-6.4 4.3-.4 1.1-.9 2.3-1.3 3.4l-29.1 83.7c-2.1 6.1-4.2 12.1-6.5 18.6-.4-.9-.6-1.4-.8-1.9-10.8-29.9-21.6-59.9-32.4-89.8-1.7-4.7-3.5-9.5-5.3-14.2-.9-2.5-2.7-4-5.4-4-6.4-.1-12.8-.2-19.2-.1-2.2 0-3.3 1.6-2.8 3.7zM242.4 206c1.7 11.7 7.6 20.8 18 26.6 9.9 5.5 20.7 6.2 31.7 4.6 12.7-1.9 23.9-7.3 33.8-15.5 .4-.3 .8-.6 1.4-1 .5 3.2 .9 6.2 1.5 9.2 .5 2.6 2.1 4.3 4.5 4.4 4.6 .1 9.1 .1 13.7 0 2.3-.1 3.8-1.6 4-3.9 .1-.8 .1-1.6 .1-2.3v-88.8c0-3.6-.2-7.2-.7-10.8-1.6-10.8-6.2-19.7-15.9-25.4-5.6-3.3-11.8-5-18.2-5.9-3-.4-6-.7-9.1-1.1h-10c-.8 .1-1.6 .3-2.5 .3-8.2 .4-16.3 1.4-24.2 3.5-5.1 1.3-10 3.2-15 4.9-3 1-4.5 3.2-4.4 6.5 .1 2.8-.1 5.6 0 8.3 .1 4.1 1.8 5.2 5.7 4.1 6.5-1.7 13.1-3.5 19.7-4.8 10.3-1.9 20.7-2.7 31.1-1.2 5.4 .8 10.5 2.4 14.1 7 3.1 4 4.2 8.8 4.4 13.7 .3 6.9 .2 13.9 .3 20.8 0 .4-.1 .7-.2 1.2-.4 0-.8 0-1.1-.1-8.8-2.1-17.7-3.6-26.8-4.1-9.5-.5-18.9 .1-27.9 3.2-10.8 3.8-19.5 10.3-24.6 20.8-4.1 8.3-4.6 17-3.4 25.8zM98.7 106.9v175.3c0 .8 0 1.7 .1 2.5 .2 2.5 1.7 4.1 4.1 4.2 5.9 .1 11.8 .1 17.7 0 2.5 0 4-1.7 4.1-4.1 .1-.8 .1-1.7 .1-2.5v-60.7c.9 .7 1.4 1.2 1.9 1.6 15 12.5 32.2 16.6 51.1 12.9 17.1-3.4 28.9-13.9 36.7-29.2 5.8-11.6 8.3-24.1 8.7-37 .5-14.3-1-28.4-6.8-41.7-7.1-16.4-18.9-27.3-36.7-30.9-2.7-.6-5.5-.8-8.2-1.2h-7c-1.2 .2-2.4 .3-3.6 .5-11.7 1.4-22.3 5.8-31.8 12.7-2 1.4-3.9 3-5.9 4.5-.1-.5-.3-.8-.4-1.2-.4-2.3-.7-4.6-1.1-6.9-.6-3.9-2.5-5.5-6.4-5.6h-9.7c-5.9-.1-6.9 1-6.9 6.8zM493.6 339c-2.7-.7-5.1 0-7.6 1-43.9 18.4-89.5 30.2-136.8 35.8-14.5 1.7-29.1 2.8-43.7 3.2-26.6 .7-53.2-.8-79.6-4.3-17.8-2.4-35.5-5.7-53-9.9-37-8.9-72.7-21.7-106.7-38.8-8.8-4.4-17.4-9.3-26.1-14-3.8-2.1-6.2-1.5-8.2 2.1v1.7c1.2 1.6 2.2 3.4 3.7 4.8 36 32.2 76.6 56.5 122 72.9 21.9 7.9 44.4 13.7 67.3 17.5 14 2.3 28 3.8 42.2 4.5 3 .1 6 .2 9 .4 .7 0 1.4 .2 2.1 .3h17.7c.7-.1 1.4-.3 2.1-.3 14.9-.4 29.8-1.8 44.6-4 21.4-3.2 42.4-8.1 62.9-14.7 29.6-9.6 57.7-22.4 83.4-40.1 2.8-1.9 5.7-3.8 8-6.2 4.3-4.4 2.3-10.4-3.3-11.9zm50.4-27.7c-.8-4.2-4-5.8-7.6-7-5.7-1.9-11.6-2.8-17.6-3.3-11-.9-22-.4-32.8 1.6-12 2.2-23.4 6.1-33.5 13.1-1.2 .8-2.4 1.8-3.1 3-.6 .9-.7 2.3-.5 3.4 .3 1.3 1.7 1.6 3 1.5 .6 0 1.2 0 1.8-.1l19.5-2.1c9.6-.9 19.2-1.5 28.8-.8 4.1 .3 8.1 1.2 12 2.2 4.3 1.1 6.2 4.4 6.4 8.7 .3 6.7-1.2 13.1-2.9 19.5-3.5 12.9-8.3 25.4-13.3 37.8-.3 .8-.7 1.7-.8 2.5-.4 2.5 1 4 3.4 3.5 1.4-.3 3-1.1 4-2.1 3.7-3.6 7.5-7.2 10.6-11.2 10.7-13.8 17-29.6 20.7-46.6 .7-3 1.2-6.1 1.7-9.1 .2-4.7 .2-9.6 .2-14.5z" />
+          </svg>
+        </div>
+
+      </div>
+      <div class="">
+        <img src="/images/logo.svg" alt="" height="40px">
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
